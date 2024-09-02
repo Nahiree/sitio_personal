@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+}
+
+header ul{
+    list-style:none;
+    display: flex;
+    padding: 20px 30% 20px 30% ;
+    margin: 0 auto;
+}
+
+header ul li a{
+    display: block;
+    font-size: 23.04px;
+    list-style:none;
+    text-decoration: none;
+    padding: 20px;
+    background-size: 75px;
+    color: black;
+}
+
+header ul li a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23.04px;
+    font-weight: 500px;
+    height: 75px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
