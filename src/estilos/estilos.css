@@ -39,6 +39,12 @@ header{
     margin: 0 auto;
 }
 
+header img{
+    margin-left: 30px;
+    padding: 10px 0 0;
+    justify-content: center;
+}
+
 header ul{
     list-style:none;
     display: flex;
@@ -47,19 +53,20 @@ header ul{
 }
 
 header ul li a{
-    display: block;
-    font-size: 23.04px;
+    display: flex;
+    font-size: 21.06px;
     list-style:none;
     text-decoration: none;
     padding: 20px;
     background-size: 75px;
     color: rgb(236, 148, 12);
+    justify-content: center;
+    align-items: center;
 }
 
 header ul li a:hover{
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 21.06px;
     font-weight: bold;
     height: 75px;
@@ -67,6 +74,7 @@ header ul li a:hover{
     color: rgb(126, 9, 80);
     align-items: center;
 }
+
 /*body*/
 body{
     padding: 95px 0 0 0;
