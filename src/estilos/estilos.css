@@ -172,6 +172,7 @@ h1{
     font-size: 37.32px;
     margin: 0 auto;
     color: rgb(196, 198, 0);
+    
 }
 
 h2{
@@ -188,6 +189,7 @@ h3{
 h4{
     font-size: 21.6px;
     color: rgb(196, 198, 0);
+    font-weight: normal;
 }
 
 p{
@@ -276,7 +278,6 @@ p{
     height: 120px;
 }
 
-
 .contenedor .secciones .subsecciones .subsec1_hobbies img{
     width: 100%;
     margin-top: 30px;
@@ -291,7 +292,6 @@ p{
     width: 50%;
     gap: 100px;
 }
-
 
 .contenedor .secciones .subsecciones .subsecciones_mus2{
     display: flex;
