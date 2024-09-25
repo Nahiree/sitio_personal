@@ -1,3 +1,12 @@
+/*RECURSOS*/
+
+/*PALETA DE COLORES*/
+:root{
+    --primario : #081C24;
+    --secundario : #C8A4F9;
+    --acento : #F5BE41;
+}
+
 /*TIPOGRAFÍAS*/
 @font-face{
     font-family: Poppins;
@@ -7,16 +16,28 @@
 @font-face{
     font-family: Akira;
     src: url(/src/tipografia/Akira\ Expanded\ Demo.otf)
-}
+} 
 
-/*CÓDIGO DE COLORES*/
-/*VIOLETA rgb(67, 18, 63)*/
-/*AMARILLO DORADO rgb(196, 198, 0)*/
-/*CRIMSON RED rgb(175, 30, 11)*/
-/*DARK MAROON rgb(48, 28, 29)*/
-/*ABER ORANGE rgb(236, 148, 12)*/
-/*DEEP MAGENTA rgb(126, 9, 80)*/
-/*ELEMENTOS GENERALES*/
+/*ESCALA TIPOGRÁFICA*/
+
+h1 {font-size: 44.76px;}
+
+h2 {font-size: 37.32px;}
+
+h3 {font-size: 31.1px;}
+
+h4 {font-size: 25.92px;}
+
+h5 {font-size: 21.6px;}
+
+h6 {font-size: 18px;}
+
+p {font-size: 15px;}
+
+
+/*ELEMENTOS DEL DOCUMENTO*/
+
+/*RESETEO Y APLICAR TIPOGRAFÍA*/
 *{
     margin: 0;
     padding: 0;
@@ -27,53 +48,41 @@
 /*HEADER*/
 
 header{
-    position: fixed;
     width: 100%;
     top: 0%;
     height: 95px;
     display: flex;
     flex: row;
-    justify-content: space-between;
-    background-color:rgb(126, 9, 80);
+    background-color:var(--primario);
     align-items: center;
-    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 60px;
 }
 
-header img{
-    margin-left: 30px;
-    padding: 10px 0 0;
-    justify-content: center;
+header h1{
+    width: 115px; 
+    background-image: url(../img/nahire.png);
+    text-indent: -9999px;
+    height: 53px;
 }
 
 header ul{
     list-style:none;
     display: flex;
-    padding: 10px 30%;
-    margin: 0 auto;
+    gap: 20px;
+    justify-content: flex-start;
 }
 
 header ul li a{
-    display: flex;
-    font-size: 21.06px;
-    list-style:none;
+    font-size: 15px;
     text-decoration: none;
-    padding: 20px;
-    background-size: 75px;
-    color: rgb(236, 148, 12);
-    justify-content: center;
-    align-items: center;
+    color: var(--secundario);
 }
 
 header ul li a:hover{
-    display: flex;
-    justify-content: center;
-    font-size: 21.06px;
-    font-weight: bold;
-    height: 75px;
-    background-color: rgb(236, 148, 12);
-    color: rgb(126, 9, 80);
-    align-items: center;
+    color: var(--acento);
 }
+*/
 
 /*body*/
 body{
@@ -166,36 +175,7 @@ button a:hover{
 }
 
 
-/*ESCALA TIPOGRÁFICA*/
 
-h1{
-    font-size: 37.32px;
-    margin: 0 auto;
-    color: rgb(196, 198, 0);
-    
-}
-
-h2{
-    font-size: 31.1px;
-    font-weight: normal;
-    color: rgb(196, 198, 0);
-}
-
-h3{
-    font-size: 25.92px;
-    font-weight: normal;
-    color: rgb(196, 198, 0);
-}
-h4{
-    font-size: 21.6px;
-    color: rgb(196, 198, 0);
-    font-weight: normal;
-}
-
-p{
-    font-size: 15px;
-    color: rgb(236, 148, 12);
-}
 
 /*ELEMENTOS INDEX*/
 .contenedor .secciones .subsecciones_ind{
