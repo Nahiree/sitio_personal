@@ -3,36 +3,67 @@
 /*PALETA DE COLORES*/
 :root{
     --primario : #081C24;
-    --secundario : #C8A4F9;
-    --acento : #F5BE41;
+    --secundario : #FCEEE7;
+    --acento : #C8A4F9;
 }
 
 /*TIPOGRAFÍAS*/
 @font-face{
     font-family: Poppins;
-    src: url(/src/tipografia/Poppins/Poppins-Regular.ttf)
+    src: url(../tipografia/Poppins/Poppins-Regular.ttf)
 }
 
 @font-face{
-    font-family: Akira;
-    src: url(/src/tipografia/Akira\ Expanded\ Demo.otf)
+    font-family: Poppins_medium;
+    src: url(../tipografia/Poppins/Poppins-Medium.ttf)
+}
+
+@font-face{
+    font-family: Poppins_semiBold;
+    src: url(../tipografia/Poppins/Poppins-SemiBold.ttf)
+} 
+
+@font-face{
+    font-family: Poppins_bold;
+    src: url(../tipografia/Poppins/Poppins-Bold.ttf)
 } 
 
 /*ESCALA TIPOGRÁFICA*/
 
-h1 {font-size: 44.76px;}
+h1 {
+    font-size: 44.76px;
+    color: var(--secundario);
+}
 
-h2 {font-size: 37.32px;}
+h2 {
+    font-size: 37.32px;
+    color: var(--secundario);
+}
 
-h3 {font-size: 31.1px;}
+h3 {
+    font-size: 31.1px;
+    color: var(--secundario);
+}
 
-h4 {font-size: 25.92px;}
+h4 {
+    font-size: 25.92px;
+    color: var(--secundario);
+}
 
-h5 {font-size: 21.6px;}
+h5 {
+    font-size: 21.6px;
+    color: var(--secundario);
+}
 
-h6 {font-size: 18px;}
+h6 {
+    font-size: 18px;
+    color: var(--secundario);
+}
 
-p {font-size: 15px;}
+p {
+    font-size: 15px;
+    color: var(--secundario);
+}
 
 
 /*ELEMENTOS DEL DOCUMENTO*/
@@ -48,12 +79,13 @@ p {font-size: 15px;}
 /*HEADER*/
 
 header{
+    position: fixed;
     width: 100%;
     top: 0%;
     height: 95px;
     display: flex;
     flex: row;
-    background-color:var(--primario);
+    background-color:transparent;
     align-items: center;
     justify-content: space-between;
     padding: 0 60px;
@@ -69,11 +101,12 @@ header h1{
 header ul{
     list-style:none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: flex-start;
 }
 
 header ul li a{
+    font-family: Poppins_medium;
     font-size: 15px;
     text-decoration: none;
     color: var(--secundario);
@@ -82,19 +115,78 @@ header ul li a{
 header ul li a:hover{
     color: var(--acento);
 }
-*/
 
-/*body*/
-body{
-    padding: 95px 0 0 0;
+
+/*BOTONES*/
+
+button{
+    padding: 7px 14px;
+    border-style: none;
+    background-color: var(--secundario);
+    border-radius: 30px;
 }
 
-/*a*/
+button a{
+    
+    font-family: Poppins_medium;
+    text-decoration: none;
+    color: var(--primario);
+}
 
+button:hover{
+    padding: 7px 14px;
+    border-style: none;
+    background-color: var(--acento);
+    border-radius: 30px;
+}
+
+button a:hover{
+    
+    font-family: Poppins_medium;
+    text-decoration: none;
+    color: var(--secundario);
+}
+
+/*ELEMENTOS GENERALES*/
 a{
     font-size: 15px;
     text-decoration: none;
     color: rgb(236, 148, 12);
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    height: 500px;
+    width: auto;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primario);
+    padding-top: 95px;
+    min-height: 90vh;
+    height: auto;
+}
+
+.contenedor .secciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor .secciones2{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
 }
 
 /*FOOTER*/
@@ -146,78 +238,115 @@ footer .contenedor_footer section:nth-child(2) {
     text-decoration:underline;
   }
   
+/*////////////////// GUSTOS CULTURALES //////////////////////////*/
 
-/*BOTONES*/
-
-button{
-    padding: 5px 10px;
-    border-style: none;
-    background-color: rgb(175, 30, 11);
-    margin-bottom: 20px;
-}
-
-button a{
-    text-decoration: none;
-    color: rgb(196, 198, 0);
-}
-
-button:hover{
-    padding: 5px 10px;
-    border-style: none;
-    background-color: rgb(236, 148, 12);
-    margin-bottom: 20px;
-}
-
-button a:hover{
-    text-decoration: none;
-    color: rgb(67, 18, 63);
-    font-weight: bold;
-}
-
-
-
-
-/*ELEMENTOS INDEX*/
-.contenedor .secciones .subsecciones_ind{
+.contenedor .secciones2 li{
     display: flex;
-    margin: auto;
-    gap: 50px;
-}
-.contenedor .secciones .subsecciones_ind .subsec_ind{
+    flex-direction: row;
     margin: auto;
 }
 
-.contenedor .secciones .subsecciones_ind .subsec_ind h1{
-    text-align: left;
-}
-/*ELEMENTOS CULTURA*/
-
-.contenedor{
+.contenedor .secciones2 li div {
     display: flex;
     flex-direction: column;
-    background-color: rgb(48, 28, 29);
+    margin: auto;
 }
 
-.contenedor .secciones{
+.contenedor .secciones2 h2{
+    padding: 60px;
+    margin: auto;
+}
+
+/*///////////////////////////////////////////////////////////*/
+
+/*////////////////// FAMILIA //////////////////////////*/
+
+.contenedor .secciones2 .lista_especial{
     display: flex;
     flex-direction: column;
-    background-color: rgb(67, 18, 63);
-    width: 85%;
-    min-height: 90vh;
-    height: auto;
+}
+
+.contenedor .secciones2 .lista_especial:nth-child(5){
+    text-indent: -300px;
+}
+
+/*///////////////////////////////////////////////////////////*/
+
+/*////////////////// MÚSICA //////////////////////////*/
+
+.contenedor .secciones2 .lista_artistas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 90vh;
+    width: 80%;
+}
+
+.contenedor .secciones2 .lista_artistas section{
+    display: flex;
+    flex-direction: column;
+   height: 70vh;
+   background-image: url(../img/musica.png) ;
+   background-size: contain;
+   background-blend-mode: overlay;
+   background-repeat: no-repeat;  
+   align-items: flex-end;
+   background-position: left, left;
+}
+
+.contenedor .secciones2 .lista_artistas section h2{
+    padding: 0px;
+    color: black;
+}
+
+.contenedor .secciones2 .lista_artistas ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenedor .secciones2 .lista_artistas ul li{
+    display: flex;
+    flex-direction: column;
+    gap: px;
     margin: 0 auto;
-    gap:50px;
-    padding: 50px 15% 70px 15%;
+    height: 200px;
+    width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
-.contenedor .secciones .subsecciones{
+.contenedor .secciones2 .lista_artistas ul li p{
+    color: #081C24;
+}
+
+.contenedor .secciones2 .lista_artistas ul li a{
     display: flex;
-    margin: 10px;
-    gap: 50px;
-    margin-bottom: 100px;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
 
+.contenedor .secciones2 .lista_artistas ul li a:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--primario), var(--acento));
+    background-blend-mode: overlay;
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat; 
+    background-color: transparent;
+}
+
+.contenedor .secciones2 .lista_artistas ul li a:hover p:hover{
+    text-decoration: underline;
+}
+
+/*///////////////////////////////////////////////////////////*/
 
 .contenedor .secciones .subsecciones .subsec1{
     margin-top: 20px;
