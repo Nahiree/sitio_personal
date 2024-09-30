@@ -348,6 +348,16 @@ footer .contenedor_footer section:nth-child(2) {
 
 /*///////////////////////////////////////////////////////////*/
 
+/*////////////////// TAREAS //////////////////////////*/
+
+.contenedor .secciones2 .lista_tareas{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 80%;
+}
+
+/*///////////////////////////////////////////////////////////*/
 .contenedor .secciones .subsecciones .subsec1{
     margin-top: 20px;
     display: flex;

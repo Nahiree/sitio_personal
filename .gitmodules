@@ -1,0 +1,3 @@
+[submodule "src/proyectos/ejercicios_maquetacion"]
+	path = src/proyectos/ejercicios_maquetacion
+	url = git@github.com:Nahiree/ejercicios_maquetacion.git
