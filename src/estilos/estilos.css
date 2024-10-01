@@ -179,7 +179,7 @@ img{
     flex-direction: column;
     background-image: url(../img/textura_superponer.jpg);
     padding-top: 95px;
-    min-height: 110vh;
+    min-height: 130vh;
     height: auto;
 }
 
@@ -206,8 +206,9 @@ img{
 
 .cultura .contenedor{
     display: flex;
-    padding-bottom: 300px;
+    padding-bottom: 0px;
 }
+
 .cultura .contenedor h2{
     display: flex;
     padding: 10px 70px 200px 70px;
@@ -249,23 +250,24 @@ img{
 
 /*////////////////// FAMILIA //////////////////////////*/
 
-.familia .contenedor .secciones2{
+.familia .contenedor .secciones_familia{
     display: flex;
     flex-direction: column;
     width: 50%;
     gap: 40px;
+    margin: 0 auto;
 }
 
-
-.familia .contenedor .secciones2{
-    display: flex;
-    flex-direction: column;
-}
-.familia .contenedor .secciones2 li{
+.familia .contenedor .secciones_familia li{
     display: flex;
     flex-direction: column;
 }
 
+.familia .contenedor .secciones_familia h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*///////////////////////////////////////////////////////////*/
 
@@ -274,7 +276,7 @@ img{
 .musica .contenedor .secciones2{
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 300px;
 }
 
 .musica .contenedor .secciones2 .lista_artistas{
@@ -283,25 +285,36 @@ img{
     gap: 10px;
     height: 80vh;
     width: 80%;
-    margin: auto;
+    margin-top: 50px;
 }
 
 .musica .contenedor .secciones2 .lista_artistas section{
     display: flex;
     flex-direction: column;
    height: 70vh; 
-   margin: 0 auto;
+   
 }
 
-.musica .contenedor .secciones2 .lista_artistas section h2{
-    padding: 0px;
-    color: black;
+.musica .contenedor .secciones2 .lista_artistas section h3{
+    padding-bottom: 20px;
+    font-size: 44.76px;
+    font-weight: bold;
+    justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+
+.musica .contenedor .secciones2 .lista_artistas section div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
 }
 
 .musica .contenedor .secciones2 .lista_artistas ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .musica .contenedor .secciones2 .lista_artistas ul li{
@@ -351,7 +364,7 @@ img{
 
 .musica .contenedor .secciones2 .secciones_canciones{
     width: 80%;
-    padding-bottom: 200px;
+    padding-bottom: 0px;
  }
 
  .musica .contenedor .secciones2 .secciones_canciones .texto{
@@ -590,6 +603,7 @@ img{
 .hobbies .contenedor .secciones2 ul section li{
     display: flex;
     flex-direction: column;
+    padding: 0px;
 }
 
 .hobbies .contenedor .secciones2 ul section li div{
@@ -597,18 +611,13 @@ img{
 }
 
 
-
-.hobbies .contenedor .secciones2 ul li:nth-child(1){
-
-
-}
-
 /*///////////////////////////////////////////////////////////*/
 
-/*FOOTER*/
+/*////////////////// FOOTER //////////////////////////*/
 .contenedor footer{
     height: 250px;
     margin: 25px;
+    margin-top: 200px;
 }
 
 .contenedor footer .contenedor_footer{
@@ -624,6 +633,13 @@ img{
 .contenedor footer .contenedor_footer h1{
     margin: auto;
     display: flex;
+    padding: 0 50px 0 30px;
+    width: 25%; 
+    background-image: url(../img/nahire.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    height: 53px; 
 }
 
 .contenedor footer .contenedor_footer ul{
@@ -631,7 +647,11 @@ img{
     width: 100%;
     justify-content: space-between;
     padding: 25px 50px;
-    background-color: aqua;
+}
+
+.contenedor footer .contenedor_footer ul li{
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedor footer .contenedor_footer ul li h4{
@@ -652,141 +672,11 @@ img{
     color:#9DC26B;
 }
 
-.contenedor footer .contenedor_footer ul li{
-    display: flex;
-    flex-direction: column;
-}
-
-footer .contenedor_footer section:nth-child(1) section{
-    display: block;
-    width: 50%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-  }
-
-footer .contenedor_footer section:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    justify-content: space-between;
-  }
-  
-  footer .contenedor_footer section:nth-child(2) .secciooon {
-    display: flex;
-    flex-direction: row;
-  }
-
-  footer .contenedor_footer section a:hover {
-    display: flex;
-    flex-direction: row;
-    color: rgb(196, 198, 0);
-    text-decoration:underline;
-  }
-
-.contenedor .secciones .subsecciones .subsec1{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-}
-
-.contenedor .secciones .subsecciones .subsec1 h2{
-    margin-bottom: 10px;
-}
-
-.contenedor .secciones .subsecciones .imagen{
-    width: 50%;
-}
-
-.contenedor .secciones .subsecciones .imagen img{
-    width: 100%;
-}
-
-/*ESTILOS HOBBIES*/
+/*///////////////////////////////////////////////////////////*/
 
 
-.contenedor .secciones .subsecciones .subsec1_hobbies{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
 
-.contenedor .secciones .subsecciones .subsec1_hobbies p{
-    height: 120px;
-}
 
-.contenedor .secciones .subsecciones .subsec1_hobbies img{
-    width: 100%;
-    margin-top: 30px;
-}
-
-/*ESTILOS MÚSICA*/
-
-.contenedor .secciones .subsecciones .subsec1_musica1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    gap: 100px;
-}
-
-.contenedor .secciones .subsecciones .subsecciones_mus2{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-.contenedor .secciones .subsecciones .subsecciones_mus3{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.contenedor .secciones .subsecciones .subsecciones_mus3 h3{
-    text-align: center;
-}
-
-.contenedor .secciones .subsecciones .subsecciones_mus3 img{
-    height: 250px;
-    margin-top: 15px;
-}
-
-.contenedor .secciones .subsec1_musica2{
-    background-color:rgb(67, 18, 63) ;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
-.contenedor .secciones .subsecciones .subsec1_musica1 .subsec1mus_ button{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-/*MENU*/
-
-.contenedor .secciones .subsecciones .subsec1_menu button{
-    width: auto;
-    height: auto;
-    padding:5px 10px;
-}
-
-.contenedor .secciones .subsecciones .subsec1_menu {
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-left: 100px;
-}
-
-.contenedor .secciones .subsecciones .subsec1_menu section{
-    display: flex;
-    gap: 20px;
-    
-}
 
 
 
